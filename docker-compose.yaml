@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - "9001:9001"
+    volumes:
+      - ./functions:/functions
+      - ./_controller:/controller
+      
